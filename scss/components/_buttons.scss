@@ -1,0 +1,29 @@
+.btn{
+	display: none;
+
+
+	@media screen and (min-width: 600px){
+		display: block;
+		position: absolute;
+		z-index: 1;
+		opacity: .7;
+		color: #CCC;
+
+		&:hover{
+			color: #FFF;
+		}
+
+		&.btn-prev{
+			top: 50%;
+			left: 5%;
+		}
+
+		&.btn-next{
+			
+			top: 50%;
+			right: 5%;
+		}
+	}
+}
+
+
