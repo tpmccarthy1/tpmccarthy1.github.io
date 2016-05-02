@@ -1,9 +1,9 @@
 /*full screen slider*/
 
 .slider{
-	overflow: hidden;
+overflow: hidden;
 	width: 100vw;
-	max-height: 100vh;
+	min-height: 100%;
 
 	ul{
 		position: relative;
@@ -20,7 +20,7 @@
 	    	width: 100vw;   
 
 	    	img{
-	    		min-width:100vw;
+	    		min-height:100%;
 			    position: relative;
 			    opacity: .8;
 			    top: -150px; 
