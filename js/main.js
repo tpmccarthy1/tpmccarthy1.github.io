@@ -7,8 +7,8 @@ $(document).ready(function(){
 
 	 
 	 var userFeed = new Instafeed({
-	 get: 'user',
-	 userId: 12027293,
+	 get: 'tagged',
+	 tagName: 'wolfpack',
 	 accessToken: '12027293.467ede5.9c0cd6283fd9406f879b71e3de7595f4',
 	 useHttp: true,
 	 template: '<li><img src="{{image}}" /><span id="location">{{location}}</span></li>',
