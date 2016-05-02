@@ -25,10 +25,18 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'));
 });
 
+//Compile SASS
+
+gulp.task('sass', function () {
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('js/*.js', ['lint', 'scripts']);
 });
 
 // Default Task

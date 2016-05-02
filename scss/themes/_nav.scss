@@ -1,5 +1,5 @@
 .nav{
-	background-color: #FFF;
+	background-color: #f7f7f7;
 	z-index: 2;
 
 	.title{
@@ -28,9 +28,9 @@
 
 	a{
 		transition: color .5s ease;
-		background-color: #FFF;
+		background-color: #f7f7f7;
 		text-decoration: none;
-		color: #000;
+		color: #444;
 		display: block;
 	}
 
@@ -39,7 +39,7 @@
 	}
 
 	a.active{
-		background-color: #fff;
+		background-color: #f7f7f7;
 		color: #444;
 		cursor: default;
 	}
@@ -61,7 +61,8 @@
 			padding: 0;
 			font-size: 30px;
 			font-weight: 100;
-			color: #000;
+			color: #444;
+			letter-spacing: -1px;
 		}
 
 
