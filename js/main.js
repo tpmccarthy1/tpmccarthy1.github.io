@@ -1,4 +1,12 @@
+
 $(document).ready(function(){
+
+	//Toggle mobile navbar
+
+	$(".icon").on('click', function(e){
+		$(".nav-main").toggleClass("responsive");
+
+	})
 
 	 //Scroll to page 
 

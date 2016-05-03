@@ -1,33 +1,12 @@
 .nav{
 
-	/*Display 'show menu' link*/
-	.show-menu {
-		display:block;
-	}
-
-	
-	/*Show menu when invisible checkbox is checked*/
-	input[type=checkbox]:checked ~ #menu{
-	    display: block;
-	}
-
-	/*Style 'show menu' label button and hide it by default*/
-	.show-menu {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	color: #fff;
-	background: #19c589;
-	text-align: center;
-	padding: 10px 0;
-	display: none;
-	}
-
 	background-color: #f7f7f7;
 	z-index: 2;
 
 	.title{
 		display: none;
 	}
+
 	
 	ul{
 
@@ -36,7 +15,17 @@
 		padding: 0;
 		margin: 0;
 
+		li:not(:first-child){
+		display: none;
 		}
+
+		}
+		
+	ul.responsive{
+	li:not(:first-child){
+		display: block;
+		}
+	}
 
 	li{
 		font-family: 'helvetica', sans-serif;
@@ -54,7 +43,7 @@
 		background-color: #f7f7f7;
 		text-decoration: none;
 		color: #444;
-		display: block;
+
 	}
 
 	a:hover{
@@ -68,12 +57,6 @@
 	}
 
 	@media screen and (min-width: 600px) {
-
-
-	/*Hide checkbox*/
-	input[type=checkbox]{
-	    display: none;
-	}
 
 		position: fixed;
 		width: 100%;
@@ -100,6 +83,9 @@
 			overflow: auto;
 			float: right;
 			display: inline-block;
+			li:not(:first-child){
+			display: inline-block;
+		}
 		}
 
 
@@ -110,9 +96,13 @@
 			line-height: 50px;
 			font-size: 20px;
 			}
-
-
+		.icon{
+		display: none;
 		}
+
+
+	}
+
 
 	}
 	
