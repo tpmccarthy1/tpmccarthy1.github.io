@@ -59,6 +59,22 @@ $(document).ready(function(){
  	 });
 	})
 
+	 $('.slider').slick({
+  	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  responsive: [
+    {
+      breakpoint: 800,
+      settings: "unslick"
+    }
+   
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  		]
+  	  });
+
 	
 
 }

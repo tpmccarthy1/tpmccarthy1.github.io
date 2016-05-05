@@ -1,19 +1,32 @@
 .circle-img{
-	display: none;
+ 	display: none;
+}
+
+.folio{
+	
+}
+
+.description{
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+}
+
+.screenshot{
+	margin: 0 auto;
+	box-shadow: 12px 32px 49px -9px rgba(68,68,68,0.38);
 }
 
 @media all and ( min-width: 600px ) {
 .circle-img{
- 	display: block;
-	border-radius: 50%;
+	display: block;
+    width: 300px;;
     border-radius: 50%;
-    width: 250px;
-	border: solid 1px #444;
-
+	margin: 0 auto;
 }
 
 .profile-img{
-	padding-top: 50px;
+	padding-top: 100px;
 	margin: 0 auto;
 }
 

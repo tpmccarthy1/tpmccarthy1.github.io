@@ -1,33 +1,11 @@
-/*full screen slider*/
+
+
+@media all and ( min-width: 600px ) {
 
 .slider{
-overflow: hidden;
-	width: 100vw;
-	min-height: 100%;
-
-	ul{
-		position: relative;
-		-webkit-transition: 0.5s left;
-	    -moz-transition: 0.5s left;
-	    -ms-transition: 0.5s left;
-	    -o-transition: 0.5s left;
-	    list-style: none;
-	    margin: 0; padding: 0;
-
-
-	    li{
-	    	float: left;	
-	    	width: 100vw;   
-
-	    	img{
-	    		min-height:100%;
-			    position: relative;
-			    opacity: .8;
-			    top: -150px; 
-			}
-	    }
-
-	}
-
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 40px;
 }
 
+}
