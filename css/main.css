@@ -121,14 +121,10 @@ div#contact {
   background: #444;
   text-align: center;
   width: 100%; }
-  div#contact h3 {
-    color: #ccc; }
 
-.social {
-  margin: 5px; }
-  .social i {
-    padding: 10px;
-    color: #ccc; }
+.social i {
+  padding: 10px;
+  color: #ccc; }
 
 /* grid */
 .row:last-child {
