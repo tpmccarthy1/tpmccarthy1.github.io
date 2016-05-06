@@ -34,6 +34,15 @@ max-width: 100%;
 	text-align: center;
 }
 
+.profile-img{
+	display:none;
+}
+
+.mobile-profile-img{
+	text-align: center;
+
+}
+
 @media screen and (min-width: 600px) {
 
 .description{ 
@@ -41,8 +50,13 @@ max-width: 100%;
    };
 
 .profile-img{
+	display: block;
 	margin: 0 auto;
 
+}
+
+.mobile-profile-img{
+	display: none;
 }
 
 .screenshot{

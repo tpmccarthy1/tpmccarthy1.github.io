@@ -32,8 +32,7 @@ div#home {
   border-bottom: 2px solid black;
   position: fixed;
   width: 100%;
-  transition: top 0.2s ease-in-out;
-  margin-bottom: 10px; }
+  transition: top 0.2s ease-in-out; }
   .nav .title {
     display: none; }
   .nav ul {
@@ -117,11 +116,20 @@ div#work {
   font-size: 14px;
   text-align: center; }
 
+.profile-img {
+  display: none; }
+
+.mobile-profile-img {
+  text-align: center; }
+
 @media screen and (min-width: 600px) {
   .description {
     font-size: 20px; }
   .profile-img {
+    display: block;
     margin: 0 auto; }
+  .mobile-profile-img {
+    display: none; }
   .screenshot {
     max-width: 100%; }
     .screenshot img {
@@ -215,14 +223,15 @@ p {
   text-rendering: optimizeLegibility; }
 
 .circle-img {
-  display: none; }
+  padding-top: 40px;
+  border-radius: 50%;
+  width: 200px;
+  margin: 0 auto; }
 
 @media all and (min-width: 600px) {
   .circle-img {
     display: block;
-    width: 300px;
-    border-radius: 50%;
-    margin: 0 auto; } }
+    width: 250px; } }
 
 @media all and (min-width: 600px) {
   .slider {
