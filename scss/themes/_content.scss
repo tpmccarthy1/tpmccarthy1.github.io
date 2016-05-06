@@ -11,3 +11,38 @@ div#work {
 	background: #C8C8C8;
 	
 }
+
+div#work{
+max-width: 100%;
+	
+}
+
+.screenshot{
+	max-width: 100%;
+	img{
+	max-width: 100%;
+	height: auto;
+	}
+	margin: 0 auto;
+	box-shadow: 12px 32px 49px -9px rgba(68,68,68,0.38);
+}
+
+.description{
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+
+.description{ 
+   font-size: 20px;
+   };
+
+.profile-img{
+	margin: 0 auto;
+}
+
+
+}

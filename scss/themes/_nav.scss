@@ -2,6 +2,7 @@
 
 	background-color: #f7f7f7;
 	z-index: 2;
+	border-bottom: 2px solid black;
 
 	.title{
 		display: none;
@@ -27,7 +28,6 @@
 	}
 
 	li{
-		font-family: 'helvetica', sans-serif;
 		font-weight: 200;
 		font-size: 1em;
 		line-height: 40px;
@@ -71,9 +71,8 @@
 			margin: 0;
 			padding: 0;
 			font-size: 30px;
-			font-weight: 100;
-			color: #444;
 			letter-spacing: -1px;
+			color: #444;
 		}
 
 

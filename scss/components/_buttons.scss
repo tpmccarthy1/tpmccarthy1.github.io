@@ -7,21 +7,19 @@
 		position: absolute;
 		z-index: 1;
 		opacity: .7;
-		color: #CCC;
+		color: #000;
 
 		&:hover{
-			color: #FFF;
+			color: #CCC;
 		}
 
 		&.btn-prev{
-			top: 50%;
-			left: 5%;
+			top: 35%;
 		}
 
 		&.btn-next{
-			
-			top: 50%;
-			right: 5%;
+			top: 35%;
+			right: 20px;
 		}
 	}
 }

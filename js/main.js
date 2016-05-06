@@ -63,6 +63,8 @@ $(document).ready(function(){
   	  infinite: true,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
+	  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
+      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
 	  responsive: [
     {
       breakpoint: 800,

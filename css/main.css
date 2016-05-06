@@ -19,7 +19,8 @@
 
 .nav {
   background-color: #f7f7f7;
-  z-index: 2; }
+  z-index: 2;
+  border-bottom: 2px solid black; }
   .nav .title {
     display: none; }
   .nav ul {
@@ -32,7 +33,6 @@
   .nav ul.responsive li:not(:first-child) {
     display: block; }
   .nav li {
-    font-family: 'helvetica', sans-serif;
     font-weight: 200;
     font-size: 1em;
     line-height: 40px;
@@ -64,9 +64,8 @@
         margin: 0;
         padding: 0;
         font-size: 30px;
-        font-weight: 100;
-        color: #444;
-        letter-spacing: -1px; }
+        letter-spacing: -1px;
+        color: #444; }
       .nav ul {
         overflow: auto;
         float: right;
@@ -93,6 +92,29 @@ div#work {
   padding: 10px 20px 10px 20px;
   height: 100%;
   background: #C8C8C8; }
+
+div#work {
+  max-width: 100%; }
+
+.screenshot {
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 12px 32px 49px -9px rgba(68, 68, 68, 0.38); }
+  .screenshot img {
+    max-width: 100%;
+    height: auto; }
+
+.description {
+  margin: 0 auto;
+  max-width: 100%;
+  font-size: 14px;
+  text-align: center; }
+
+@media screen and (min-width: 600px) {
+  .description {
+    font-size: 20px; }
+  .profile-img {
+    margin: 0 auto; } }
 
 div#contact {
   height: 100%;
@@ -156,22 +178,21 @@ div#contact {
       position: absolute;
       z-index: 1;
       opacity: .7;
-      color: #CCC; }
+      color: #000; }
       .btn:hover {
-        color: #FFF; }
+        color: #CCC; }
       .btn.btn-prev {
-        top: 50%;
-        left: 5%; }
+        top: 35%; }
       .btn.btn-next {
-        top: 50%;
-        right: 5%; } }
+        top: 35%;
+        right: 20px; } }
 
 body {
-  color: #444; }
+  color: #444;
+  font-family: 'Cabin', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  font-family: 'helvetica', Arial, sans-serif;
   color: inherit;
   text-rendering: optimizeLegibility; }
 
@@ -187,23 +208,11 @@ p {
 .circle-img {
   display: none; }
 
-.description {
-  margin: 0 auto;
-  width: 500px;
-  text-align: center; }
-
-.screenshot {
-  margin: 0 auto;
-  box-shadow: 12px 32px 49px -9px rgba(68, 68, 68, 0.38); }
-
 @media all and (min-width: 600px) {
   .circle-img {
     display: block;
     width: 300px;
     border-radius: 50%;
-    margin: 0 auto; }
-  .profile-img {
-    padding-top: 100px;
     margin: 0 auto; } }
 
 @media all and (min-width: 600px) {
