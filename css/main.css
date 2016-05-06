@@ -197,10 +197,10 @@ div#contact {
         color: #FFF; }
       .btn.btn-prev {
         top: 35%;
-        left: 20px; }
+        left: -5%; }
       .btn.btn-next {
         top: 35%;
-        right: 20px; } }
+        right: -5%; } }
 
 body {
   color: #444;

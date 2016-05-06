@@ -51,7 +51,7 @@ $(document).ready(function(){
       prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
 	  responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 900,
       settings: "unslick"
     }
   		]
