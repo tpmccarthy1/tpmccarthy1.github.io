@@ -1,8 +1,20 @@
+
+.nav-up{
+	top: -40px;
+}
+
+.nav-down{
+	top: 0px;
+}
+
 .nav{
 
 	background-color: #f7f7f7;
 	z-index: 2;
 	border-bottom: 2px solid black;
+	position: fixed;
+	width: 100%;
+	transition: top 0.2s ease-in-out;
 
 	.title{
 		display: none;
@@ -57,12 +69,6 @@
 
 	@media screen and (min-width: 600px) {
 
-		position: fixed;
-		width: 100%;
-		z-index: 10;
-		top: 0;
-		border-bottom:1px solid black;
-
 		.title{
 			position: absolute;
 			bottom: 0;
@@ -86,7 +92,7 @@
 		}
 		}
 		ul.responsive{
-	li:not(:first-child){
+	    li:not(:first-child){
 		display: inline-block;
 		}
 	}
@@ -107,5 +113,6 @@
 	}
 
 
-	}
+}
+
 	

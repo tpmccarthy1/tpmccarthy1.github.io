@@ -1,6 +1,62 @@
 
 $(document).ready(function(){
 
+
+	// Hide Nav on on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('nav').outerHeight();
+
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+	    
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+	    
+	    // If they scrolled down and are past the navbar, add class .nav-up.
+	    // This is necessary so you never see what is "behind" the navbar.
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('nav').removeClass('nav-down').addClass('nav-up');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('nav').removeClass('nav-up').addClass('nav-down');
+	        }
+	    }
+	    
+	    lastScrollTop = st;
+	}
+
+	//Slider
+
+	 $('.slider').slick({
+  	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
+      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
+	  responsive: [
+    {
+      breakpoint: 600,
+      settings: "unslick"
+    }
+  		]
+  	  });
+
 	//Toggle mobile navbar
 
 	$(".icon").on('click', function(e){
@@ -31,52 +87,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.scrollTo( '#contact', 800);
 	});
-
-	//Hide Nav on Scroll
-
-	$(function(e){
-	  	var prevScroll = 0,
-	    curDir = 'down',
-	    prevDir = 'up';
-  
-  		$(window).scroll(function(e){
-    	if($(this).scrollTop() >= prevScroll){
-          curDir = 'down';
-          if(curDir != prevDir){
-          $('.nav').stop();
-    	  $('.nav').animate({ top: '-50px' }, 300);
-          prevDir = curDir;
-          	}
-    	  } else {
-	          curDir = 'up';
-	          if(curDir != prevDir){
-	          $('.nav').stop();
-	          $('.nav').animate({ top: '0px' }, 300);
-	          prevDir = curDir;
-         		 }
-     		 }
-      	prevScroll = $(this).scrollTop();
- 	 });
-	})
-
-	 $('.slider').slick({
-  	  infinite: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
-      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
-	  responsive: [
-    {
-      breakpoint: 800,
-      settings: "unslick"
-    }
-   
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  		]
-  	  });
-
 	
 
 }

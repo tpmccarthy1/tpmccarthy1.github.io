@@ -19,12 +19,12 @@ max-width: 100%;
 
 .screenshot{
 	max-width: 100%;
+	border-radius: 3%;
 	img{
-	max-width: 100%;
+	max-width: 75%;
 	height: auto;
 	}
 	margin: 0 auto;
-	box-shadow: 12px 32px 49px -9px rgba(68,68,68,0.38);
 }
 
 .description{
@@ -42,7 +42,12 @@ max-width: 100%;
 
 .profile-img{
 	margin: 0 auto;
+
 }
 
-
+.screenshot{
+	max-width: 100%;
+	img{max-width: 100%;
+	height: auto;}
+}
 }
