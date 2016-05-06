@@ -1,4 +1,7 @@
 @charset "UTF-8";
+div#home {
+  margin-bottom: 20px; }
+
 .banner-img {
   display: none; }
 
@@ -29,7 +32,8 @@
   border-bottom: 2px solid black;
   position: fixed;
   width: 100%;
-  transition: top 0.2s ease-in-out; }
+  transition: top 0.2s ease-in-out;
+  margin-bottom: 10px; }
   .nav .title {
     display: none; }
   .nav ul {
