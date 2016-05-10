@@ -109,12 +109,11 @@ div#work {
   max-height: 75%; }
 
 .screenshot {
+  width: 100%;
   border-radius: 3%;
   margin: 0 auto; }
 
 .description {
-  background: #ccc;
-  border-radius: 3%;
   margin: 0 auto;
   max-width: 100%;
   font-size: 14px;
@@ -128,7 +127,10 @@ div#work {
 
 @media screen and (min-width: 600px) {
   .description {
-    font-size: 20px; }
+    font-size: 20px;
+    max-width: 50%;
+    padding: 3px;
+    margin-top: 5px; }
   .profile-img {
     position: relative;
     display: block;
