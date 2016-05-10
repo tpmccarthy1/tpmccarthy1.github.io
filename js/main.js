@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 
@@ -41,28 +40,47 @@ $(document).ready(function(){
 	    lastScrollTop = st;
 	}
 
+
+
 	//Slider
 
-	 $('.slider').slick({
-  	  infinite: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
-      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
-	  responsive: [
-    {
-      breakpoint: 900,
-      settings: "unslick"
-    }
-  		]
-  	  });
+	// function and variables, 'unslick' while window size reach maximum width (641px)
+    var maxWidth = 667,
+      slickVar = {
+	      speed: 500,
+		  fade: true,
+		  cssEase: 'linear',
+	  	  infinite: true,
+		  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
+	      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
+		  responsive: [{
+	      breakpoint: maxWidth,
+	      settings: "unslick"
+   		 }]
+      },
+      runSlick = function() {
+        $('.slider').slick(slickVar);
+      };
+
+      // slick initialization while document ready
+      runSlick();
+
+      // listen to jQuery's window resize
+      $(window).on('resize', function(){
+        var width = $(window).width();
+        if(width > maxWidth) {
+          // reinit slick while window's width is less than maximum width (641px)
+          runSlick();
+        }
+      });
+
 
 	//Toggle mobile navbar
 
 	$(".icon").on('click', function(e){
 		$(".nav-main").toggleClass("responsive");
-
 	})
+
 
 	 //Scroll to page 
 
@@ -70,7 +88,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.scrollTo( '#home', 800);
 	});
-
 
 	$(".about").on('click', function(e){
 		e.preventDefault();
@@ -82,14 +99,11 @@ $(document).ready(function(){
 		$.scrollTo( '#work', 800);
 	});
 
-
 	$(".contact").on('click', function(e){
 		e.preventDefault();
 		$.scrollTo( '#contact', 800);
 	});
 	
-
-}
-)
+})
 
 

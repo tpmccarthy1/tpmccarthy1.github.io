@@ -9,5 +9,8 @@ div#contact {
 	i{
 		padding: 10px;
 		color: #ccc;
+	&:hover{
+		color: #FFF;
+	}
 	}
 }

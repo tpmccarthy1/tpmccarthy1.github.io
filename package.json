@@ -1,12 +1,12 @@
 {
-  "name": "tom-mccarthy",
+  "name": "tpmccarthy1.github.io",
   "version": "0.0.1",
   "description": "Portfolio Website",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Tom McCarthy",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.8.11",

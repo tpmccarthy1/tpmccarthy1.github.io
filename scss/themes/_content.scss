@@ -15,12 +15,11 @@ div#work {
 
 div#work{
 	max-width: 100%;
-	
+	a:focus{
+	outline: none;
+	}
 }
 
-.example{
-	max-height: 75%;
-}
 
 .screenshot{
 	width: 100%;
@@ -47,17 +46,17 @@ div#work{
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 667px) {
 
 .description{ 
-   font-size: 20px;
-   max-width: 50%;
-   padding: 3px;
-   margin-top: 5px;
-   };
+  	font-size: 20px;
+  	max-width: 50%;
+  	padding: 3px;
+  	margin-top: 5px;
+   }
 
 .profile-img{
-	position: relative;
+  	position: relative;
 	display: block;
 	margin: 0 auto;
 

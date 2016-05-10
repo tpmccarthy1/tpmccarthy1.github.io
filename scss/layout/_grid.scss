@@ -1,13 +1,10 @@
 
 /* grid */
 .row {
-
-}
-.row:last-child {
-  margin-bottom: 0;
+  width: 100%;
 }
 
-@media all and ( min-width: 600px ) {
+@media all and ( min-width: 667px ) {
 
 .main col-2-3{
   overflow: hidden;

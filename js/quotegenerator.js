@@ -1,5 +1,4 @@
-var currentQuote = '',
-  currentAuthor = '';
+//Function to assign random color to element
 
 function ranCol(id, id2) { //function name
   var foo = document.getElementById(id);
@@ -10,6 +9,13 @@ function ranCol(id, id2) { //function name
   foo.style.background = color;
   foo2.style.color = color; // Setting the random color on your div element.
 }
+
+//Init variables to store quote and author
+
+var currentQuote = '',
+    currentAuthor = '';
+
+//Request random quote from API, assign the key to variables, display content on DOM 
 
 function getQuote() {
   $.ajax({
@@ -48,10 +54,14 @@ function getQuote() {
   })
 }
 
+//Function to display new quote
+
 function quoteDisplay() {
   getQuote();
   ranCol('body', 'quote');
 }
+
+//Function to hook up button to diplsay new quote
 
 $(document).ready(function() {
   quoteDisplay();

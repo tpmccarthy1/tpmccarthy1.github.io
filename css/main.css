@@ -104,9 +104,8 @@ div#work {
 
 div#work {
   max-width: 100%; }
-
-.example {
-  max-height: 75%; }
+  div#work a:focus {
+    outline: none; }
 
 .screenshot {
   width: 100%;
@@ -125,7 +124,7 @@ div#work {
 .mobile-profile-img {
   text-align: center; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 667px) {
   .description {
     font-size: 20px;
     max-width: 50%;
@@ -152,12 +151,14 @@ div#contact {
 .social i {
   padding: 10px;
   color: #ccc; }
+  .social i:hover {
+    color: #FFF; }
 
 /* grid */
-.row:last-child {
-  margin-bottom: 0; }
+.row {
+  width: 100%; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 667px) {
   .main col-2-3 {
     overflow: hidden; }
   .col {
@@ -187,7 +188,7 @@ div#contact {
 
 .btn {
   display: none; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 667px) {
     .btn {
       display: block;
       position: absolute;
@@ -214,11 +215,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-weight: 200;
-  font-family: inherit;
-  font-weight: inherit;
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 1.25em;
+  line-height: 20px;
+  margin-bottom: 10px;
   text-rendering: optimizeLegibility; }
 
 .circle-img {
@@ -234,8 +233,10 @@ p {
     max-height: 100%;
     display: block;
     width: 250px;
+    padding-top: 10px;
     padding-bottom: 10px; } }
 
+/* CSS overides for slick slider */
 @media all and (min-width: 600px) {
   .slider {
     margin-left: 100px;
@@ -604,9 +605,6 @@ th {
 
 html, body {
   height: 100%; }
-
-.clear {
-  clear: both; }
 
 .clearfix:after {
   content: "";
