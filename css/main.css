@@ -5,7 +5,7 @@ div#home {
 .banner-img {
   display: none; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
   div#home {
     margin-bottom: 0px; }
   .banner-img {
@@ -63,7 +63,7 @@ div#home {
     background-color: #f7f7f7;
     color: #444;
     cursor: default; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     .nav .title {
       position: absolute;
       bottom: 0;
@@ -97,7 +97,7 @@ div#main-content {
   background: #f7f7f7; }
 
 div#work {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 0px 20px;
   height: 100%;
   margin: 0 auto;
   background: #C8C8C8; }
@@ -124,7 +124,7 @@ div#work {
 .mobile-profile-img {
   text-align: center; }
 
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 768px) {
   .description {
     font-size: 20px;
     max-width: 50%;
@@ -158,7 +158,7 @@ div#contact {
 .row {
   width: 100%; }
 
-@media all and (min-width: 667px) {
+@media all and (min-width: 768px) {
   .main col-2-3 {
     overflow: hidden; }
   .col {
@@ -188,13 +188,15 @@ div#contact {
 
 .btn {
   display: none; }
-  @media screen and (min-width: 667px) {
+  @media screen and (min-width: 768px) {
     .btn {
       display: block;
       position: absolute;
       z-index: 1;
       opacity: .7;
-      color: #000; }
+      color: #000;
+      font-size: 36px;
+      transition: color 0.5s ease; }
       .btn:hover {
         color: #FFF; }
       .btn.btn-prev {
@@ -226,7 +228,7 @@ p {
   width: 200px;
   margin: 0 auto; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
   .circle-img {
     position: relative;
     max-width: 100%;
@@ -237,11 +239,10 @@ p {
     padding-bottom: 10px; } }
 
 /* CSS overides for slick slider */
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
   .slider {
     margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 40px; } }
+    margin-right: 100px; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

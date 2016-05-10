@@ -45,14 +45,14 @@ $(document).ready(function(){
 	//Slider
 
 	// function and variables, 'unslick' while window size reach maximum width (641px)
-    var maxWidth = 667,
+    var maxWidth = 768,
       slickVar = {
 	      speed: 500,
 		  fade: true,
 		  cssEase: 'linear',
 	  	  infinite: true,
-		  nextArrow:"<i class='fa fa-arrow-circle-o-right fa-3x btn btn-next'></i>",
-	      prevArrow:"<i class='fa fa-arrow-circle-o-left fa-3x btn btn-prev'></i>",
+		  nextArrow:"<i class='fa fa fa-angle-double-right fa-5x btn btn-next'></i>",
+	      prevArrow:"<i class='fa fa fa-angle-double-left fa-5x btn btn-prev'></i>",
 		  responsive: [{
 	      breakpoint: maxWidth,
 	      settings: "unslick"
