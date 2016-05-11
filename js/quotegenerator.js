@@ -54,14 +54,12 @@ function getQuote() {
   })
 }
 
-//Function to display new quote
+//Function to get new quote and change colors
 
 function quoteDisplay() {
   getQuote();
   ranCol('body', 'quote');
 }
-
-//Function to hook up button to diplsay new quote
 
 $(document).ready(function() {
   quoteDisplay();
