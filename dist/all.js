@@ -82,6 +82,7 @@ $(document).ready(function(){
 	})
 
 	//Hide navbar when item is clicked 
+	
 	$(".item").on('click', function(e){
 		$(".nav-main").removeClass("responsive");
 	})
