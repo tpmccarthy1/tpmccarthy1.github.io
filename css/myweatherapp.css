@@ -1,0 +1,165 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: #112236;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.weather-container{
+  background-color: #dbe4ed;
+}
+
+
+.bar {
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ flex-flow:column wrap;
+ background-color: #436280;
+ text-align: center;
+ color: #fff;
+
+}
+
+.title{
+  margin-bottom: 0;
+  padding: 5px 0 5px 5px;
+}
+
+.search{
+  margin-top: auto;
+  padding: 5px 5px 5px 0;
+}
+
+
+.search input{
+  height: 35px;
+  width: 200px;
+}
+
+.search input[type=text] {
+   font-size: 16px;
+   text-align: center;
+}
+
+.search label{
+  display: none;
+}
+
+.search button{
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  background: #3498db;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none
+}
+
+::-webkit-input-placeholder {
+   font-size: 16px;
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 16px;
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 16px;
+   text-align: center;
+}
+
+:-ms-input-placeholder {  
+   font-size: 16px;
+   text-align: center;
+}
+
+@media only screen 
+and (min-device-width : 769px)  {
+.bar{
+ flex-flow:row wrap;
+ justify-content: space-between;
+ font-weight: 100;
+}
+
+.title{
+  text-align: left;
+}
+
+.search{
+  flex-flow:row wrap;
+  text-align: right;
+}
+
+.search span{
+  display: inline-flex;
+}
+
+.search input{
+  display: inline-flex;
+}
+
+.search button:hover{
+  background: #3cb0fd;
+}
+
+.weather-container{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.weather-inner h1{
+  font-size: 50px;
+}
+
+.weather-inner h2{
+  font-size: 40px;
+}
+
+.weather-inner h3{
+  font-size: 30px;
+}
+
+}
+
+.weather-container{
+ background-color: #dbe4ed;
+ color: #444;
+ display:flex;
+ flex-flow:column wrap;
+ justify-content: flex-start;
+ align-items: center;
+ height: 100vh;
+}
+
+.weather-inner{
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.weather-inner ul{
+  list-style-type: none;
+}
+
+.weather-icon{
+  height: 100px;
+}
+
+
+
